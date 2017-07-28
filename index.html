@@ -7,12 +7,34 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
+    
+    
 </head>
 
 <body>
 <div>
+    
     <h1>Example Domain</h1>
-    <button>Click!</button>
+    <button onclick="alert('you clicked me')">Click!</button>
+</div>
+<hr />
+<div>
+    <p id="name">my name is Calvin</p>
+    <button id="button"> change name</button>
+    <script type=text/javascript>
+        
+        document.getElementById("button").onclick=function(){
+            document.getElementById("name").innerHTML=" now I am Mike";
+            //this above code is for changing content
+             alert("Change done");
+        }
+    </script>
+    
+</div>
+<div>
+    <hr />
+    <h2>Go to the next page...</h2>
+    <button type="button" onclick="location.href='./2.html';">Next Page</button>
 </div>
 </body>
 </html>
